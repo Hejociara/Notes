@@ -1,0 +1,62 @@
+### Variáveis e as instruções
+
+Processing: setup e draw
+
+A função setup é responsável por executar as configurações da tela do programa criado, como tamanho, cor, número de quadros por segundo etc.
+
+A função draw é uma função que se repetirá constantemente enquanto o programa estiver aberto; nela, vão todas as instruções de movimentação do personagem e qualquer outra ação que precisar se repetir durante o jogo. 
+
+O comando void significa que a função criada não retornará um valor. Os parênteses fazem parte da sintaxe das funções e as chaves limitam o que está sendo programado dentro e fora delas.
+
+Na função draw ficará o loop do programa,  esta função desenha os elementos da tela.
+
+Bits são a menor unidade de memória para um computador
+
+A combinação de oito unidades de bit forma um **byte**, a segunda menor unidade de memória.
+
+Cada bit presente em um byte representa uma potência de dois.
+
+As cores também podem ser representadas por outro tipo de valor, chamado **hexadecimal**.
+
+**Os hexadecimais funcionam em base 16, assim os valores variam de 0 a F.** 
+
+ ***Case Sensitive***
+
+Os componentes de cores podem ter um espaço reservado para a escala de transparência, conhecida como escala Alpha. Ela pode aparecer como uma variável char extra que também recebe valores de 0 a 255.
+
+***case sensitive\*** Difereniação da interpretação de letras minúsculas e maiúsculas 
+
+Camel case - prática de inicializar as letras de cada palavra com letras em maiúsculo
+
+
+
+**CONCATENAÇÂO** -  Para juntar o texto a ser exibido com o valor do resultado da expressão que estava dentro da variável é utilizado o símbolo de soma.
+
+EX: *println(“O resultado da expressão é: ” + result);*
+
+O operador E (&&) compara duas ou mais expressões; se todas tiverem resultado true, ele retorna o valor true. Porém, se uma das duas expressões ou todas tiverem valor false, o valor retornado será false, enquanto o operador OU (||) retorna o valor true, contanto que ao menos uma das expressões tenha resultado true e apenas retorna false se todos as expressões tiverem valor false.
+
+Os comandos da biblioteca padrão do Processing para criação são:
+
+## SIZE
+
+Utilizado para estabelecer o tamanho da tela. Este comando pode receber até três argumentos, sendo os dois primeiros a largura e o tamanho da tela em pixels obrigatórios, o último é o tipo de renderização, a qual precisa ser alterada se houver a utilização de elementos tridimensionais.
+
+EX:
+
+*void setup() {*
+
+*size(640,360);*
+
+*}*
+
+## background  
+
+Determina a cor de fundo da tela. Pode receber até quatro valores, os quais representam as três cores do sistema RGB (vermelha, amarela e azul) e a opacidade. Caso receba apenas um argumento, será entendido como escalas de cinza.
+
+ 
+
+*void setup() {*
+
+*background(0, 255, 0); //Cor azul}*
+
