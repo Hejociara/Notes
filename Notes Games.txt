@@ -54,9 +54,177 @@ EX:
 
 Determina a cor de fundo da tela. Pode receber até quatro valores, os quais representam as três cores do sistema RGB (vermelha, amarela e azul) e a opacidade. Caso receba apenas um argumento, será entendido como escalas de cinza.
 
- 
-
 *void setup() {*
 
 *background(0, 255, 0); //Cor azul}*
+
+
+
+width – Retorna o valor de largura da tela, definido no comando size.
+
+*void setup() {*
+
+*size(640, 360);*
+
+*println(“A largura da tela é: ” + width); //O valor de width declarado é igual a 640}*
+
+
+
+height – Retorna o valor da altura da tela, definido no comando size. 
+
+*void setup() {*
+
+*size(640, 360);*
+
+*println(“A largura da tela é: ” + height); //O valor de height declarado é igual a 360}*
+
+
+
+point – Cria um ponto na tela com o tamanho de um pixel. Recebe apenas os valores de posicionamento em x e y.
+
+*void draw() {point(50, 50);}*
+
+
+
+line – Cria uma linha de um ponto A a um ponto B. Pode utilizar o comando stroke na linha anterior para determinar a cor do traço e o comando strokeWeight para determinar a espessura do traço. Pode receber até seis valores, os quais equivalem à posição dos pontos inicial e final em x e y, sendo obrigatórios. Os dois últimos pontos são utilizados apenas no caso da renderização tridimensional e determinam o posicionamento no eixo z do último ponto.
+
+*void draw() {line(50, 50, 100, 50);}*
+
+quad – Cria uma forma quadrilateral que não possui necessariamente ângulos de noventa graus. Assim como uma linha, essa forma precisa do posicionamento x e y de cada um dos quatro pontos, os quais são conhecidos como vértices.
+
+*void draw() {*
+
+*quad(20, 50, 50, 50, 70, 80, 10, 80);}*
+
+
+
+triangle – Cria uma forma com três vértices. Cada vértice precisa receber as duas coordenadas dos eixos x e y.
+
+*void draw() {* 
+
+*triangle(50, 50, 80, 80, 20, 80);}*
+
+
+
+rect – Cria uma forma retangular com ângulos internos de noventa graus. Diferente das demais formas, o comando rect somente necessita das posições dos eixos x e y iniciais; os demais argumentos são a largura e altura do retângulo. Também é possível atribuir valores para o arredondamento dos vértices. Seu ponto cardeal inicial fica localizado no canto superior esquerdo da forma.
+
+*void draw() {*
+
+*rect(20, 20, 30, 50);}*
+
+
+
+ellipse – Desenha uma elipse que pode ser oval. Este comando recebe valores para a posição inicial nos eixos x e y, além da altura e largura da forma. Diferentemente do comando rect, o ponto inicial fica no centro da forma.
+
+*void draw() {*
+
+*ellipse(50, 50, 20, 50);}*
+
+
+
+ellipse – Desenha uma elipse que pode ser oval. Este comando recebe valores para a posição inicial nos eixos x e y, além da altura e largura da forma. Diferentemente do comando rect, o ponto inicial fica no centro da forma. `ellipse([coordenada x],[coordenada y], [largura], [altura])`.
+
+*void draw() {*
+
+*ellipse(50, 50, 20, 50);}*
+
+
+
+Sprites podem ser dinâmicos ou estáticos.
+
+O formato de compressão da imagem, o mais apropriado para jogos é o PNG
+
+Sintaxe para a criação de um objeto de imagem:
+
+*//Declaração do objeto com o tipo seguido pelo nome do objeto
+PImage img;
+void setup() {size(640,360);
+//Atribuição da imagem ao objeto
+img = loadImage("BG.png");}
+void draw() {
+//Exibição do objeto na tela com os parâmetros de posicionamento e tamanho
+image(img, 0, 0, width, height);}*
+
+### TILES  -  são usadas pequenas peças lado a lado para compor as plataformas, terrenos e demais cenários.
+
+noFIll (); //a forma não terá nem um preenchimento  
+
+stroke(0, 0, 255) // contorno do objeto
+
+noStroke() // sem contorno
+
+
+
+Para assumir a posição em que o mouse se encontra, utiliza-se o comando a seguir:
+
+```
+void draw() {
+  ellipse(mouseX, mouseY, 100, 100);
+}
+```
+
+Para que a posição em que o mouse se encontra seja atribuída uma nova posição enquanto pressiona-se o mouse com o botão direito do mouse, utilize o seguinte recurso: 
+
+```
+if (mousePressed){
+```
+
+Exemple:
+
+```
+void setup() {
+  size(510, 510);
+  background(#333333);
+  noFill();
+  stroke(#FFFFFF);
+}
+void draw() {
+  if (mousePressed){
+    ellipse(mouseX, mouseY, 100, 100);
+  }
+}
+```
+
+O tamanho aleatório da forma geométrica pode ser definido por:
+
+random()
+
+Quando queremos fazer com que o objeto se mova, ou ande um pixel, devemos incrementar.
+
+Exemple:
+
+float posX;
+void setup() {
+  size(510, 510);
+  background(#333333);
+  noFill();
+  stroke(#FFFFFF);
+  posX= width/2;
+}
+void draw() {
+  ellipse(posX, height/2, 30, 30);
+  posX = posX +1;
+}
+
+
+
+No setup deve-se definir um valor inicial para a variável.
+
+Para fazer a movimentação e não deixar rastro, deve-se redefinir a cor do `background()`, dentro do `draw()`. Assim, a cada quadro, o programa pinta o fundo por cima de tudo e desenha o círculo na sua nova posição.
+
+```
+float posX;
+void setup() {
+  size(510, 510);
+  background(#333333);
+  noFill();
+  stroke(#FFFFFF);
+  posX = width/2;
+}
+void draw() {
+  background(#333333);
+  ellipse(posX, height/2, 30, 30);
+  posX = posX + 1;
+}
+```
 
