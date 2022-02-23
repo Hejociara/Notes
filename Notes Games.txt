@@ -24,7 +24,7 @@ As cores também podem ser representadas por outro tipo de valor, chamado **hexa
 
 Os componentes de cores podem ter um espaço reservado para a escala de transparência, conhecida como escala Alpha. Ela pode aparecer como uma variável char extra que também recebe valores de 0 a 255.
 
-***case sensitive\*** Difereniação da interpretação de letras minúsculas e maiúsculas 
+***case sensitive\*** Diferenciação da interpretação de letras minúsculas e maiúsculas 
 
 Camel case - prática de inicializar as letras de cada palavra com letras em maiúsculo
 
@@ -145,7 +145,9 @@ void draw() {
 //Exibição do objeto na tela com os parâmetros de posicionamento e tamanho
 image(img, 0, 0, width, height);}*
 
-### TILES  -  são usadas pequenas peças lado a lado para compor as plataformas, terrenos e demais cenários.
+### TILES  -  são usadas pequenas peças lado a lado para compor as plataformas, terrenos e demais cenários. 
+
+Tiles podem ser dispostos em tilesets e podem ser acessados pelo seu posicionamento
 
 noFIll (); //a forma não terá nem um preenchimento  
 
@@ -228,3 +230,66 @@ void draw() {
 }
 ```
 
+**tilesets** - podem possuir várias peças diferentes, economizando espaço da memória e necessitando que apenas um arquivo seja carregado.
+
+IF – A estrutura condicional padrão é o IF. Com ela, é possível criar caminhos de escolha dentro do programa de forma simples ou aninhada, com várias condicionais consecutivas. Por exemplo:
+
+*If (3 < 5) {println(“O número três é menor do que o número cinco”);}*
+
+Em jogos, IF é utilizada para as principais ações programadas. É através dela que é verificado se um botão está sendo apertado ou que a inteligência artificial do inimigo é criada, por exemplo. A estrutura ainda dispõe de mais duas variações utilizando as palavras-chave ELSE e ELSE IF.
+
+
+
+A palavra-chave ELSE é utilizada quando se quer estabelecer um caminho opcional para quando a condição da estrutura IF não se cumprir. Por exemplo:
+
+*int life = 30;*
+
+*if (life < 15) {*
+
+*println(“O personagem está com menos da metade da vida. Tome cuidado!”);}*
+
+*else {println(“O personagem está com mais da metade da vida. Continue lutando!”);}*
+
+ 
+
+Enquanto a palavra-chave ELSE IF é usada para criar mais uma condição alternativa. É possível criar quantas funções alternativas forem necessárias. Por exemplo:
+
+*String type = “Fire”;*
+
+*if (type == “Fire”) {println(“O seu personagem tem vantagem contra o tipo Planta.”);}*
+
+*else if (type == “Water”) {println (“O seu personagem tem vantagem contra o tipo Fogo.”);}*
+
+*else if (type == “Plant”) {println (“O seu personagem tem vantagem contra o tipo Água.”);}*
+
+*else (){println(“O seu personagem não têm vantagem contra nenhum tipo.”)}*
+
+
+
+WHILE – A estrutura de repetição WHILE é utilizada para repetir um bloco de comandos enquanto determinada condição não é cumprida. Por exemplo: 
+
+*int i = 1;*
+
+*while (i < 10) {println(“Número de vezes que o laço se repetiu: ” + i”);*
+
+*i = i + 1;}*
+
+ 
+
+É imprescindível que exista o acréscimo do índice para que o loop termine, caso contrário ele ocorrerá de forma infinita. O WHILE também pode ser utilizado para criar um laço de repetição infinito para que haja uma atualização constante. A função draw pode ser vista como um exemplo disto.
+
+ 
+
+*while (true) {println(“Este laço é infinito.”);}*
+
+
+
+FOR –  A estrutura FOR é usada, assim como a estrutura WHILE, para que um bloco de script seja repetido diversas vezes, com a diferença que é possível estabelecer internamente o valor inicial da variável que será utilizada como condição, o limite de repetição e a forma de acréscimo. Eis a sintaxe:
+
+*for (int i = 0; i < 10; i = i + 1){println(“O valor da variável i é:” + i);}*
+
+
+
+A operação de concatenação pode ser usada para somar posições e mover personagens na tela.
+
+Array - podem armazenar diversos itens em uma mesma variável, para acessar um item de um array é necessário indicar o seu índice.

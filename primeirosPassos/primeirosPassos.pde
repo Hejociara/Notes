@@ -1,5 +1,6 @@
 float posX;
-void setup() {
+float velX;
+void setup(){
   size(510, 510);
   background(#333333);
   noFill();
@@ -8,6 +9,12 @@ void setup() {
 }
 void draw() {
   background(#333333);
+  velX = mouseX/10;
   ellipse(posX, height/2, 30, 30);
-  posX = posX +1;
+  if (posX > width) {
+    posX = 0;
+  }
+  else{
+    posX = posX + velX;
+  }
 }
