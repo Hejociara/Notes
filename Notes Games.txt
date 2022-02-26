@@ -293,3 +293,24 @@ FOR –  A estrutura FOR é usada, assim como a estrutura WHILE, para que um blo
 A operação de concatenação pode ser usada para somar posições e mover personagens na tela.
 
 Array - podem armazenar diversos itens em uma mesma variável, para acessar um item de um array é necessário indicar o seu índice.
+
+
+
+### Utilizando mouse e teclado
+
+Para saber a posição horizontal do mouse basta utilizar o comando mouseX, e para obter a posição vertical basta utilizar o comando mouseY. Basicamente, para que um objeto seja desenhado na posição do mouse, é necessário que ele receba as posições x e y do mouse.
+
+*void setup() {**
+size(640,360);
+background(0);
+}*
+
+*void draw() {
+background(0);
+//Esconde a imagem do cursor
+noCursor();
+//A elipse tem sua posição constantemente atualizada pela posição do mouse
+ellipse(mouseX, mouseY, 20,20);
+**}* 
+
+Para utilizar os botões do mouse para executar alguma tarefa, é utilizada a função mousePressed().
