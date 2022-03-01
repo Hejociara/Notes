@@ -314,3 +314,21 @@ ellipse(mouseX, mouseY, 20,20);
 **}* 
 
 Para utilizar os botões do mouse para executar alguma tarefa, é utilizada a função mousePressed().
+
+### Utilizando o teclado 
+
+Para captar os botões pressionados no teclado, usa-se: keyPressed .
+
+ keyReleased - verifica se um botão terminou de ser pressionado.
+
+**INTELIGÊNCIA ARTIFICIAL**
+
+Em desenvolvimento de jogos digitais, a IA é o comportamento atribuído aos robôs virtuais, também conhecidos como bots.
+
+As máquinas de estado são um conjunto de reações possíveis do bot para cada situação presente no jogo, por exemplo: descansar, atacar, desviar, perseguir, fugir, esconder-se, entre outras ações, junto às condições que estabelecem a transição entre os comportamentos, conhecidos como estados.
+
+No Processing, a função para verificar a distância entre dois pontos é chamada dist, que recebe como parâmetro as posições x e y.
+
+Para facilitar o processo de desenvolvimento de jogos, foram criados os motores de jogos, também conhecidos como Game Engines ou motores gráficos.
+
+Os motores de jogos são programas de computador que contêm diversas bibliotecas e ferramentas para agilizar a programação e o desenvolvimento de jogos digitais em geral. Também é possível criar suas próprias *game engines*, criando programas que executem funções comuns na criação de jogos.
