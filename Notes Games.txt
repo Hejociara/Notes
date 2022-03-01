@@ -332,3 +332,30 @@ No Processing, a função para verificar a distância entre dois pontos é chama
 Para facilitar o processo de desenvolvimento de jogos, foram criados os motores de jogos, também conhecidos como Game Engines ou motores gráficos.
 
 Os motores de jogos são programas de computador que contêm diversas bibliotecas e ferramentas para agilizar a programação e o desenvolvimento de jogos digitais em geral. Também é possível criar suas próprias *game engines*, criando programas que executem funções comuns na criação de jogos.
+
+Algumas ferramentas que um motor gráfico pode conter são:
+
+* A renderização de gráficos bidimensionais e tridimensionais através da comunicação com a placa de vídeo;
+
+* Motores de física para especificação de atributos variáveis relacionados às leis físicas transpostas para o universo digital do jogo;
+
+* Criação de animações, efeitos visuais, partículas e texturas; recursos para a criação de inteligências artificiais;
+
+* Ferramentas para administrar pastas de arquivos;
+
+* Criação e alteração de sons;
+
+
+
+## **PRINCIPAIS MOTORES DE JOGOS**
+
+**Unity**
+
+Unity3D, é um motor gráfico criado pela empresa Unity Tecnologies, pensado primariamente para a criação de jogos 3D, porém, com o passar dos anos, adquiriu suporte para a criação de jogos 2D.
+
+Utiliza MonoDevelop, mas também pode ser substituído por outros programas e utiliza atualmente a linguagem C# para o desenvolvimento de jogos.
+
+Um dos grandes diferenciais do Unity é a grande variedade e facilidade para exportar o jogo para diversas plataformas, dentre elas dispositivos móveis, web, consoles e computadores
+
+hjifos
+
