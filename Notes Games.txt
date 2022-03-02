@@ -345,7 +345,9 @@ Algumas ferramentas que um motor gráfico pode conter são:
 
 * Criação e alteração de sons;
 
+## Motores de jogos
 
+São programas de computador que contêm diversas bibliotecas e ferramentas para agilizar a programação e o desenvolvimento de jogos digitais em geral
 
 ## **PRINCIPAIS MOTORES DE JOGOS**
 
@@ -357,5 +359,26 @@ Utiliza MonoDevelop, mas também pode ser substituído por outros programas e ut
 
 Um dos grandes diferenciais do Unity é a grande variedade e facilidade para exportar o jogo para diversas plataformas, dentre elas dispositivos móveis, web, consoles e computadores
 
-hjifos
+## **Unreal**
 
+Criada pela empresa Epic Games, a Unreal foi criada para jogos de tiro em primeira pessoa. Apesar disso, esse motor é amplamente usado para o desenvolvimento de diversos tipos de jogos.
+
+Utiliza-se a linguagem C++ e Blueprint -implementada a partir da Unreal Engine 4-.
+
+### **Construct**
+
+Desenvolvido pela empresa Scirra, é um programa de desenvolvimento de jogos focado em jogos 2D, baseado na tecnologia HTML5. A versão Construct 3 pode ser usada diretamente de um navegador web.
+
+Esse motor de jogos não possui uma linguagem textual para programação, ao invés disso ele conta com uma linguagem visual composta de eventos e um sistema de lógica baseado em comportamentos. 
+
+O programa conta com um editor de imagens, sendo possível criar ou editar sprites e animações internamente no software, também efeitos visuais, além de um sistema de clicar e arrastar para adicionar objetos à cena.
+
+### **GameMaker Studio**
+
+Projetado pela empresa Yo Yo Games, o GameMaker é um motor de jogos com linguagem de programação própria, a Game Maker Language, também conhecida como GML.
+
+O motor tem algumas ferramentas para facilitar a importação de sprites e imagens bidimensionais, sendo bastante usado para a criação de jogos 2D. Ele também conta com ferramentas para criação interna de sprites, sons e scripts.
+
+**CryEngine** 
+
+Ele suporta as linguagens de programação C++ e Lua.
