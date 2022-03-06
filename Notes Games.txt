@@ -321,6 +321,8 @@ Para captar os botões pressionados no teclado, usa-se: keyPressed .
 
  keyReleased - verifica se um botão terminou de ser pressionado.
 
+o comando key é usado em estruturas condicionais para verificar teclas especificas.
+
 **INTELIGÊNCIA ARTIFICIAL**
 
 Em desenvolvimento de jogos digitais, a IA é o comportamento atribuído aos robôs virtuais, também conhecidos como bots.
@@ -348,6 +350,8 @@ Algumas ferramentas que um motor gráfico pode conter são:
 ## Motores de jogos
 
 São programas de computador que contêm diversas bibliotecas e ferramentas para agilizar a programação e o desenvolvimento de jogos digitais em geral
+
+Motores de jogos podem possuir ferramentas para a criação de sprites.
 
 ## **PRINCIPAIS MOTORES DE JOGOS**
 
@@ -382,3 +386,14 @@ O motor tem algumas ferramentas para facilitar a importação de sprites e image
 **CryEngine** 
 
 Ele suporta as linguagens de programação C++ e Lua.
+
+O que diferencia as game engines, além das ferramentas disponíveis para o desenvolvimento, é a parcela de lucros com a qual a empresa do software fica por contrato ao vender um jogo ou o limite que se pode lucrar com o jogo. 
+
+## Tratamento de colisões
+
+Caixa de colisão:
+
+Utilizada em jogos bidimensionais e tridimensionais; ela serve para que seja possível verificar a colisão entre objetos como formas geométricas básicas, como círculos e retângulos, possibilitando a utilização de cálculos simples para detectar e tratar as colisões. Qualquer objeto ou personagem pode possuir uma caixa de colisão
+
+As colisões podem ser divididas em dois grupos: colisões entre objetos e colisões de objetos com o cenário.
+
